@@ -37,11 +37,11 @@ class AppHome extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Padding(
-              padding: ScreenConfig.viewInsets,
+              padding: viewInsets,
               child: Container(
                 color: Colors.red,
-                height: ScreenConfig.safeBlockVertical * 50,
-                width: ScreenConfig.safeBlockHorizontal * 50,
+                height: safeBlockVertical * 50,
+                width: safeBlockHorizontal * 50,
                 child: FittedBox(
                   child: Text("50x50 safe dynamic 0.01 sized blocks"),
                 ),
@@ -53,14 +53,14 @@ class AppHome extends StatelessWidget {
           children: [
             Container(
               color: Colors.blue,
-              width: ScreenConfig.screenWidth * 0.5,
-              height: ScreenConfig.screenHeight * 0.5,
+              width: screenWidth * 0.5,
+              height: screenHeight * 0.5,
               child: Stack(
                 children: [
                   Align(
                     alignment: Alignment.topCenter,
                     child: Text(
-                      "ScreenConfig.screenWidth * 0.5%",
+                      "screenWidth * 0.5%",
                       style: TextStyle(color: Colors.white),
                     ),
                   ),
@@ -74,7 +74,7 @@ class AppHome extends StatelessWidget {
                     child: RotatedBox(
                       quarterTurns: 1,
                       child: Text(
-                        "ScreenConfig.screenHeight * 0.5",
+                        "screenHeight * 0.5",
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -84,8 +84,8 @@ class AppHome extends StatelessWidget {
             ),
             Container(
               color: Colors.red,
-              height: ScreenConfig.blockSizeVertical * 50,
-              width: ScreenConfig.blockSizeHorizontal * 50,
+              height: blockSizeVertical * 50,
+              width: blockSizeHorizontal * 50,
               child: FittedBox(
                 child: Text("50x50 dynamic 0.01 sized blocks"),
               ),
